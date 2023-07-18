@@ -1,3 +1,71 @@
+/* COLORS */
+:root {
+	--Soft-red: hsl(7, 99%, 70%);
+	--Yellow: hsl(51, 100%, 49%);
+	--Dark-desaturated-cyan: hsl(167, 40%, 24%); /* (graphic design text)*/
+	--Dark-blue: hsl(198, 62%, 26%); /*(photography text)*/
+	--Dark-moderate-cyan: hsl(168, 34%, 41%); /* (footer)*/
+
+	--Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+	--Very-dark-grayish-blue: hsl(213, 9%, 39%);
+	--Dark-grayish-blue: hsl(232, 10%, 55%);
+	--Grayish-blue: hsl(210, 4%, 67%);
+	--White: hsl(0, 0%, 100%);
+}
+/* FONTS */
+@font-face {
+	font-family: Barlow-Semi-Bold;
+	src: url(./Assets/Fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-SemiBold.ttf);
+}
+@font-face {
+	font-family: Fraunces-Bold;
+	src: url(./Assets/Fonts/Fraunces/static/Fraunces_144pt-Bold.ttf);
+}
+@font-face {
+	font-family: Fraunces-Extra-Bold;
+	src: url(./Assets/Fonts/Fraunces/static/Fraunces_144pt-Black.ttf);
+}
+/* STYLES */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+html {
+	box-sizing: border-box;
+	font-size: 112.5%;
+}
+body {
+	box-sizing: inherit;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+section {
+	width: 100%;
+	height: 100%;
+}
+/* HEADER STYLES */
+.header {
+	background-color: red;
+}
+/* SERVICES STYLES */
+.services {
+	background-color: blue;
+}
+/* TESTIMONIALS STYLES */
+.testimonials {
+	background-color: green;
+}
+/* FOOTER STYLES */
+.footer {
+	background-color: yellow;
+}
 .attribution {
 	font-size: 11px;
 	text-align: center;
