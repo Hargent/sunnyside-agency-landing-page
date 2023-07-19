@@ -129,9 +129,9 @@ body {
 		list-style: none;
 		width: 100%;
 	}
-	/* & ul > * {
-		margin-right: 15%;
-	} */
+	@media only screen and (max-width: 800px) {
+		display: none;
+	}
 
 	& ul > *:last-child {
 		background-color: #fff;
@@ -140,6 +140,12 @@ body {
 		color: var(--Very-dark-desaturated-blue);
 		font-family: Fraunces-Black;
 		text-transform: uppercase;
+	}
+}
+.header__nav__icon-container {
+	display: none;
+	@media only screen and (max-width: 800px) {
+		display: inline;
 	}
 }
 .header__title {
