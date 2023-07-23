@@ -1,0 +1,19 @@
+{
+  "name": "sunnyside-agency-landing-page",
+  "version": "1.0.0",
+  "description": "Internship project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Hargent/sunnyside-agency-landing-page.git"
+  },
+  "author": "Hargent",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hargent/sunnyside-agency-landing-page/issues"
+  },
+  "homepage": "https://github.com/Hargent/sunnyside-agency-landing-page#readme"
+}
