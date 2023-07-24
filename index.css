@@ -87,7 +87,7 @@ body {
 	left: 0;
 	z-index: 1;
 	width: 100%;
-	padding: 5.4rem 7.2rem;
+	padding: 5rem;
 
 	color: #fff;
 	font-family: Barlow-Semi-Bold;
@@ -114,12 +114,12 @@ body {
 	text-decoration: solid;
 }
 .header__nav {
-	width: 40%;
+	/* width: 40%; */
 	text-transform: capitalize;
 }
 .header__nav ul {
 	display: flex;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 	align-items: center;
 
 	list-style: none;
@@ -132,6 +132,9 @@ body {
 	color: var(--Very-dark-desaturated-blue);
 	font-family: Fraunces-Black;
 	text-transform: uppercase;
+}
+.header__nav ul > *:not(:last-child) {
+	margin-right: 2rem;
 }
 
 .header__title {
@@ -165,6 +168,7 @@ body {
 
 	width: 95%;
 	height: 70%;
+	top: 9%;
 
 	opacity: 0;
 	visibility: hidden;
