@@ -70,6 +70,12 @@ body {
 .header {
 	/* background-color: red; */
 	position: relative;
+	height: 70svh;
+
+	background-image: url(./Assets/images/desktop/image-header.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 .header__img {
 	/* position: absolute; */
@@ -82,10 +88,10 @@ body {
 	width: 100%;
 }
 .header__menu {
-	position: absolute;
+	/* position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 1;
+	z-index: 1; */
 	width: 100%;
 	padding: 5rem;
 
@@ -141,7 +147,10 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 100%;
+	width: 70vw;
+	text-align: center;
+	/* height: 100%;
+	 */
 }
 .header__title > *:first-child {
 	margin-bottom: auto;
@@ -150,13 +159,14 @@ body {
 .header__title h1 {
 	font-family: Fraunces-Black;
 	font-size: 4.5rem;
+	/* font-size: 5vw; */
 	/* word-spacing: 1.25rem; */
-	letter-spacing: 1.8rem;
+	letter-spacing: 1rem;
 	text-transform: uppercase;
-	padding: 2rem;
+	padding: 1rem;
 }
 .header__title img {
-	padding: 2.25rem;
+	padding: 1.5rem;
 }
 /* MOBILE */
 .mobile__menu {
@@ -255,6 +265,28 @@ body {
 .services__item {
 	position: relative;
 	width: 100%;
+}
+.services__item-1,
+.services__item-2,
+.services__item-3,
+.services__item-4,
+.services__item-5,
+.services__item-6 {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.services__item-2 {
+	background-image: url(./Assets/images/desktop/image-transform.jpg);
+}
+.services__item-3 {
+	background-image: url(./Assets/images/desktop/image-stand-out.jpg);
+}
+.services__item-5 {
+	background-image: url(./Assets/images/desktop/image-graphic-design.jpg);
+}
+.services__item-6 {
+	background-image: url(./Assets/images/desktop/image-photography.jpg);
 }
 .services__item img {
 	height: 100%;
@@ -434,10 +466,28 @@ body {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	width: 100%;
-}
-.footer__pictures > img {
-	width: 100%;
 	height: 100%;
+}
+.footer__picture-1,
+.footer__picture-2,
+.footer__picture-3,
+.footer__picture-4 {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.footer__picture-1 {
+	background-image: url(./Assets/images/desktop/image-gallery-milkbottles.jpg);
+}
+.footer__picture-2 {
+	background-image: url(./Assets/images/desktop/image-gallery-orange.jpg);
+}
+.footer__picture-3 {
+	background-image: url(./Assets/images/desktop/image-gallery-cone.jpg);
+}
+.footer__picture-4 {
+	background-image: url(./Assets/images/desktop/image-gallery-sugarcubes.jpg);
 }
 
 .footer__logo {
@@ -476,7 +526,7 @@ body {
 	margin-right: 2rem;
 }
 .footer__icons {
-	/* width: 15%; */
+	width: 15%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -502,7 +552,6 @@ body {
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 48em) {
-	/* display:none */
 	.header__menu {
 		padding: 2.5rem 2.3rem;
 		/* padding: 0; */
@@ -551,10 +600,52 @@ body {
 	/* FOOTER */
 	.footer__pictures {
 		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		height: 40svh;
 	}
 }
 @media only screen and (max-width: 30em) {
+	.header {
+		height: 50svh;
+
+		background-image: url(./Assets/images/mobile/image-header.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.header__title h1 {
+		font-size: 3.5rem;
+	}
+
+	.text-item {
+		text-align: center;
+	}
+	.text-item__content a {
+		align-self: center;
+	}
+	/* FOOTER */
 	.footer__pictures {
-		grid-template-columns: 1fr;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		height: 100%;
+	}
+	.footer__picture-1,
+	.footer__picture-2,
+	.footer__picture-3,
+	.footer__picture-4 {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.footer__picture-1 {
+		background-image: url(./Assets/images/mobile/image-gallery-milkbottles.jpg);
+	}
+	.footer__picture-2 {
+		background-image: url(./Assets/images/mobile/image-gallery-orange.jpg);
+	}
+	.footer__picture-3 {
+		background-image: url(./Assets/images/mobile/image-gallery-cone.jpg);
+	}
+	.footer__picture-4 {
+		background-image: url(./Assets/images/mobile/image-gallery-sugar-cubes.jpg);
 	}
 }
